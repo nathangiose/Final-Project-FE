@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    padding-top: 5%;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#filters{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.show-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+    gap: 10px;
+}
+
+.container{
+    min-width: 20vh;
+    max-width: 38vh;
+    max-height: 60vh;
+    min-height: 30vh;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid;
+    padding: 5px;
+    gap:4px;
+}
+
+.container:hover{
+    max-width: 40vh;
+    max-height: 65vh;
+}
+
+.image{
+    min-height: 20vh;
+    max-height: 41vh;
+    max-width: 41vh;
+    min-width: 20vh;
+}
+
+.info{
+    color: white;
+}
+.heading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(132, 156, 190, 0.589);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    max-height: 7vh;
+    min-height: 3vh;
+    padding: 2%;
+    align-items: center;
+    z-index: 1;
+}
+
+#name{
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 7vh;
+}
+.log{
+     display: flex;
+     gap: 13px;
+     
+ }
+
+ .link{
+     text-decoration-line:none ;
+     color: white;
+ }
+
+
+ .foot{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     background-color: white;
+     height: 10vh;
+ }
+
+ .items{
+     height: 4vh;
+     width: 15vh;
+     border: 1px solid black;
+     border-radius: 50px;
+background: linear-gradient(145deg, #4fcca9, #43ac8e);
+
+ }
+
+.items:active{
+background: linear-gradient(145deg, #43ac8e, #4fcca9);
+box-shadow:  32px 32px 35px #3fa286,
+             -32px -32px 35px #55dcb6;
+}
+
+.opening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting{
+color: white;
+}
+
+.log{
+    background: none;
+
+    color: white;
+    padding: 5px;
+}
+
+.btn{
+    border: 1px solid white;
+background: linear-gradient(145deg, #ff0000, #e60000);
+}
+
+.btn:active{
+background: #ff0000;
+box-shadow: inset 20px 20px 60px #d90000,
+            inset -20px -20px 60px #ff0000;
+}
+
+.btns{
+display: flex;
+gap: 10px;
+}
+
+.back{
+    position: fixed;
+    top: 10;
+    left: 1;
+    right: 10px;
+    bottom: 10px;
+}

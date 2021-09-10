@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="/styling/nav.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div>
+        <a href="/product.html" ><i class="fas fa-arrow-left"></i></a>
+    </div>
+    
+    <div>
+        <h5 id='name'><i class="fas fa-shopping-cart"></i> Cart</h5>
+    </div>
+    </nav>
+<div id="checkout">
+    <form method="post">
+        <input type="button" onclick="event.preventDefault(), checkOut()" value="Check Out"/>   
+    </form>
+</div>
+<footer class="foot">
+    <div class="contact">
+
+    <div id="cartItems"></div>
+    <div id="total"></div>
+    <script src="./script/cart.js"></script>
+</body>
+</html>
